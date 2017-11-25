@@ -52,6 +52,7 @@ export const Button = styled.button`
 
 export const PhoneNumber = styled.div`
   font-weight: 500;
+  white-space: nowrap;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

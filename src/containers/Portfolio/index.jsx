@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   PortfolioSection,
@@ -7,10 +6,13 @@ import {
   PortfolioCopy,
   BrandsContainer,
   Brands,
+  BrandsHovered,
   PortfolioStatue,
+  HoverHandler,
 } from './styled';
 
 import brands from '../../assets/brands.svg';
+import brandsHovered from '../../assets/brands-hover.png';
 import portfolioStatue from '../../assets/portfolio-statue.png';
 
 const Portfolio = () => (
@@ -21,14 +23,12 @@ const Portfolio = () => (
       </PortfolioCopy>
     </PortfolioHeader>
     <BrandsContainer>
+      <HoverHandler />
+      <BrandsHovered src={brandsHovered} />
       <Brands src={brands} />
       <PortfolioStatue src={portfolioStatue} />
     </BrandsContainer>
   </PortfolioSection>
 );
-
-Portfolio.propTypes = {
-
-};
 
 export default Portfolio;

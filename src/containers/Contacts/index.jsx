@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   ContactsSection,
@@ -22,7 +21,6 @@ import mailIcon from '../../assets/mail-icon.svg';
 import vkIcon from '../../assets/vk-icon.png';
 import instagramIcon from '../../assets/instagram-icon.png';
 import facebookIcon from '../../assets/facebook-icon.png';
-
 
 const Contacts = () => (
   <ContactsSection>
@@ -53,9 +51,5 @@ const Contacts = () => (
     </ContactsInfo>
   </ContactsSection>
 );
-
-Contacts.propTypes = {
-
-};
 
 export default Contacts;

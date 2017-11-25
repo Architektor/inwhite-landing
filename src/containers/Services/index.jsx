@@ -6,6 +6,7 @@ import {
   ServicesHeader,
   ServicesCopy,
   ServicesContent,
+  ServicesStatueContainer,
   ServicesStatue,
   List,
   ListHeader,
@@ -15,7 +16,7 @@ import {
 
 import servicesStatue from '../../assets/services-statue.svg';
 
-const Services = () => (
+const Services = ({ onCTAClick }) => (
   <ServicesSection>
     <ServicesHeader> 
       <ServicesCopy>
@@ -23,7 +24,8 @@ const Services = () => (
       </ServicesCopy>
     </ServicesHeader>
     <ServicesContent>
-      <ServicesStatue src={servicesStatue}>
+      <ServicesStatueContainer>
+      <ServicesStatue src={servicesStatue} />
       <List name="mediaService">
         <ListHeader>
           Медийный сервис:
@@ -87,16 +89,16 @@ const Services = () => (
         <ListItem>SMM-стратегия</ListItem>
         <ListItem>Комплексная digital-стратегия</ListItem>
       </List>
-      </ServicesStatue>
-      <Button>
+      <Button onClick={onCTAClick}>
         Начать работу
       </Button>
+      </ServicesStatueContainer>
     </ServicesContent>
   </ServicesSection>
 );
 
 Services.propTypes = {
-
+  onCTAClick: PropTypes.func.isRequired,
 };
 
 export default Services;

@@ -26,7 +26,6 @@ export const ServicesCopy = styled.span`
 `;
 
 export const ServicesContent = styled.div`
-  height: 52.3437503vw;
   width: 100%;
   position: relative;
   display: flex;
@@ -35,15 +34,18 @@ export const ServicesContent = styled.div`
   justify-content: center;
 `;
 
-export const ServicesStatue = styled.div`
-  width: 45.104167vw;
-  height: 100%;
-  position: absolute;
-  top: 50px;
-  left: 23.229167vw;
-  background: url(${props => props.src});
-  background-size: contain;
-  background-repeat: no-repeat;
+export const ServicesStatueContainer = styled.div`
+  width: 100%;
+  height: 711px;
+  padding-right: 120px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+`;
+
+export const ServicesStatue = styled.img`
+  width: 620px;
 `;
 
 function placeList(props) {
@@ -51,37 +53,44 @@ function placeList(props) {
     case 'mediaService':
       return {
         top: '-16px',
-        left: '7vw',
+        left: '50%',
+        transform: 'translate(calc(-100% - 20px), 0%)',
       };
     case 'pr':
       return {
-        top: '200px',
-        left: '-2.645833vw',
+        top: '140px',
+        left: '50%',
+        transform: 'translate(calc(-100% - 170px), 0%)',
       };
     case 'strategy':
       return {
-        top: '142px',
-        left: '39vw',
+        top: '100px',
+        left: '50%',
+        transform: 'translate(calc(-100% + 390px), 0%)',
       };
     case 'creativity':
       return {
-        top: '397px',
-        left: '2vw',
+        top: '280px',
+        left: '50%',
+        transform: 'translate(calc(-100% - 145px), 0%)',
       };
     case 'analysys':
       return {
-        top: '378px',
-        left: '39.38125vw',
+        top: '270px',
+        left: '50%',
+        transform: 'translate(calc(-100% + 390px), 0%)',
       }
     case 'smm':
       return {
-        top: '606px',
-        left: '-3vw',
+        top: '430px',
+        left: '50%',
+        transform: 'translate(calc(-100% - 210px), 0%)',
       }
     case 'production':
       return {
-        top: '630px',
-        left: '44.5vw',
+        top: '445px',
+        left: '50%',
+        transform: 'translate(calc(-100% + 465px), 0%)',
       }
     default:
       return {
@@ -89,16 +98,13 @@ function placeList(props) {
         left: '0px',
       };
   }
-  return {
-    top: '0px',
-    left: '0px',
-  };
 }
 
 export const List = styled.ul`
   position: absolute;
   top: ${props => placeList(props).top};
   left: ${props => placeList(props).left};
+  transform: ${props => placeList(props).transform};
   margin: 0px;
 `
 
@@ -122,4 +128,5 @@ export const Button = styled.button`
   font-size: 37px;
   padding: 5px 65px;
   z-index: 1;
+  transform: translateX(60px);
 `;

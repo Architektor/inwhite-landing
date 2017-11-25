@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { HeaderContainer, HeaderLinks, LogoMuted, Button, PhoneNumber, PhoneIcon, Number } from './styled';
 import logoMuted from '../../assets/logo-muted.png';
@@ -27,9 +26,5 @@ const Header = () => (
     </HeaderLinks>
   </HeaderContainer>
 );
-
-Header.propTypes = {
-
-};
 
 export default Header;

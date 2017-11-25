@@ -7,8 +7,10 @@ export const ContactsSection = styled.div`
 `;
 
 export const Map = styled.img`
-  height: 442px;
+  height: 100%;
+  width: 100%;
   position: absolute;
+  object-fit: cover;
   top: 0;
   left: 0;
 `;

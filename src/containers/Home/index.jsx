@@ -1,11 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import { HomeSection, HomeBackground, HomeStatue, Slogan, LogoContainer, Logo } from './styled';
+import { HomeSection, HomeBackground, Slogan, LogoContainer, Logo } from './styled';
 import Header from './Header';
 
 import homeBackground from '../../assets/home-background.png';
-import homeStatue from '../../assets/home-statue.svg';
 import logo from '../../assets/logo.svg';
 
 const Home = () => (
@@ -20,9 +18,5 @@ const Home = () => (
     </LogoContainer>
   </HomeSection>
 );
-
-Home.propTypes = {
-
-};
 
 export default Home;
