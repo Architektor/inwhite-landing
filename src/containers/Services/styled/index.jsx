@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ServicesSection = styled.div`
+export const ServicesSection = styled.div.attrs({ id: 'services' })`
   margin-top: 70px;
   display: flex;
   flex-flow: column nowrap;

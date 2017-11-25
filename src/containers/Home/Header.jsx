@@ -4,17 +4,26 @@ import { HeaderContainer, HeaderLinks, LogoMuted, Button, PhoneNumber, PhoneIcon
 import logoMuted from '../../assets/logo-muted.png';
 import phoneIcon from '../../assets/phone-icon.png';
 
+function scrollTo(selector) {
+  return () => {
+    const element = document.querySelector(selector);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
+
 const Header = () => (
   <HeaderContainer>
     <LogoMuted src={logoMuted} />
     <HeaderLinks>
-      <Button>
+      <Button onClick={scrollTo('#portfolio')}>
         Портфолио
       </Button>
-      <Button black>
+      <Button black onClick={scrollTo('#services')}>
         Услуги
       </Button>
-      <Button>
+      <Button onClick={scrollTo('#contacts')}>
         Контакты
       </Button>
       <PhoneNumber>

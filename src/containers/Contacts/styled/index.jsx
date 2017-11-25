@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContactsSection = styled.div`
+export const ContactsSection = styled.div.attrs({ id: 'contacts' })`
   margin-top: 79px;
   height: 442px;
   position: relative;

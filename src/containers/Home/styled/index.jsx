@@ -48,6 +48,7 @@ export const Button = styled.button`
   outline: none !important;
   cursor: pointer;
   margin: 0px 11px;
+  border-radius: 0px;
 `;
 
 export const PhoneNumber = styled.div`

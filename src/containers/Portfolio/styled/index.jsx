@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-export const PortfolioSection = styled.div`
+export const PortfolioSection = styled.div.attrs({ id: 'portfolio' })`
   margin-top: 51px;
   display: flex;
   flex-flow: column nowrap;
