@@ -119,6 +119,7 @@ export const ListItem = styled.li`
 `;
 
 export const Button = styled.button`
+  cursor: pointer;
   outline: none !important;
   background: black;
   color: white;
