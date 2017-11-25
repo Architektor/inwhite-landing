@@ -22,6 +22,8 @@ import vkIcon from '../../assets/vk-icon.png';
 import instagramIcon from '../../assets/instagram-icon.png';
 import facebookIcon from '../../assets/facebook-icon.png';
 
+import { address, socialLinks, phoneNumber, emailAddress } from '../../config/materials';
+
 const Contacts = () => (
   <ContactsSection>
     <Map src={map} />
@@ -29,24 +31,30 @@ const Contacts = () => (
     <ContactsInfo>
       <Icon src={geolocation} />
       <Address>
-        г. Москва, м. Героев Днепра<br />
-        ул Степана Бандеры<br />
-        д. 14, стр. 88, подьезд 1
+        г. {address.city}, м. {address.metroStation}<br />
+        ул {address.street}<br />
+        д. {address.houseNumber}, {address.additionalString} 
       </Address>
       <Separator />
       <Icon src={phoneBigIcon} /> 
-      <PhoneNumber href="tel:+790372814188">
-        8 (903) 728-14-88
+      <PhoneNumber href={`tel:${phoneNumber.replace(/\s*\)*\(*/g, '')}`}>
+        {phoneNumber}
       </PhoneNumber>
       <Icon src={mailIcon} />
-      <Mail href="mailto:adolf@hitler.ss">
-        adolf@hitler.ss
+      <Mail href={`mailto:${emailAddress}`}>
+        {emailAddress}
       </Mail>
       <Separator />
       <SocialBlock>
-        <Icon src={vkIcon} />
-        <Icon src={instagramIcon} />
-        <Icon src={facebookIcon} />
+        <a href={socialLinks.vkLink}>
+          <Icon src={vkIcon} />
+        </a>
+        <a href={socialLinks.instagramLink}>
+          <Icon src={instagramIcon} />
+        </a>
+        <a href={socialLinks.facebookLink}>
+          <Icon src={facebookIcon} />
+        </a>
       </SocialBlock>
     </ContactsInfo>
   </ContactsSection>

@@ -16,11 +16,13 @@ import {
 
 import servicesStatue from '../../assets/services-statue.svg';
 
+import { servicesSectionName } from '../../config/materials';
+
 const Services = ({ onCTAClick }) => (
   <ServicesSection>
     <ServicesHeader> 
       <ServicesCopy>
-        Услуги
+        {servicesSectionName}
       </ServicesCopy>
     </ServicesHeader>
     <ServicesContent>

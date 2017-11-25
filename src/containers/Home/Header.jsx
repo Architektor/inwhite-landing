@@ -4,6 +4,8 @@ import { HeaderContainer, HeaderLinks, LogoMuted, Button, PhoneNumber, PhoneIcon
 import logoMuted from '../../assets/logo-muted.png';
 import phoneIcon from '../../assets/phone-icon.png';
 
+import { phoneNumber } from '../../config/materials';
+
 function scrollTo(selector) {
   return () => {
     const element = document.querySelector(selector);
@@ -28,8 +30,8 @@ const Header = () => (
       </Button>
       <PhoneNumber>
         <PhoneIcon src={phoneIcon} />
-        <Number href="tel:+79163292111">
-          8 (916) 239-21-11
+        <Number href={`tel:${phoneNumber.replace(/\s*\)*\(*/g, '')}`}>
+          {phoneNumber}
         </Number>
       </PhoneNumber>
     </HeaderLinks>

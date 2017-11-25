@@ -11,6 +11,8 @@ import {
   HoverHandler,
 } from './styled';
 
+import { portfolioSectionName } from '../../config/materials';
+
 import brands from '../../assets/brands.svg';
 import brandsHovered from '../../assets/brands-hover.png';
 import portfolioStatue from '../../assets/portfolio-statue.png';
@@ -19,7 +21,7 @@ const Portfolio = () => (
   <PortfolioSection>
     <PortfolioHeader>
       <PortfolioCopy>
-        Наши работы
+        {portfolioSectionName}
       </PortfolioCopy>
     </PortfolioHeader>
     <BrandsContainer>

@@ -6,6 +6,8 @@ import Header from './Header';
 import homeBackground from '../../assets/home-background.png';
 import logo from '../../assets/logo.svg';
 
+import { slogan } from '../../config/materials';
+
 const Home = () => (
   <HomeSection>
     <HomeBackground src={homeBackground} />
@@ -13,7 +15,7 @@ const Home = () => (
     <LogoContainer>
       <Logo src={logo} />
       <Slogan>
-        Никакой воды. Чисто Цифры.
+        {slogan}
       </Slogan>
     </LogoContainer>
   </HomeSection>
