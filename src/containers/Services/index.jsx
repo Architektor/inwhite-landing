@@ -16,7 +16,7 @@ import {
 
 import servicesStatue from '../../assets/services-statue.svg';
 
-import { servicesSectionName } from '../../config/materials';
+import { servicesSectionName, CTAcopy } from '../../config/materials';
 
 const Services = ({ onCTAClick }) => (
   <ServicesSection>
@@ -59,40 +59,41 @@ const Services = ({ onCTAClick }) => (
         <ListHeader>
           Креатив:
         </ListHeader>
-        <ListItem>Коммуникационная стратегия</ListItem>
-        <ListItem>Медийная стратегия</ListItem>
-        <ListItem>SMM-стратегия</ListItem>
-        <ListItem>Комплексная digital-стратегия</ListItem>
+        <ListItem>Креативные концепции</ListItem>
+        <ListItem>Спецпроекты</ListItem>
+        <ListItem>Интегрированные кампании</ListItem>
+        <ListItem>Дизайн</ListItem>
+        <ListItem>Фирменный стиль</ListItem>
       </List>
       <List name="analysys">
         <ListHeader>
           Анализ:
         </ListHeader>
-        <ListItem>Коммуникационная стратегия</ListItem>
-        <ListItem>Медийная стратегия</ListItem>
-        <ListItem>SMM-стратегия</ListItem>
-        <ListItem>Комплексная digital-стратегия</ListItem>
+        <ListItem>Анализ конкурентов</ListItem>
+        <ListItem>Анализ аудитории</ListItem>
+        <ListItem>Post-campaign аналитика</ListItem>
+        <ListItem>Аудит сайта</ListItem>
+        <ListItem>Настройка аналитических сервисов</ListItem>
       </List>
       <List name="smm">
         <ListHeader>
           SMM:
         </ListHeader>
-        <ListItem>Коммуникационная стратегия</ListItem>
-        <ListItem>Медийная стратегия</ListItem>
-        <ListItem>SMM-стратегия</ListItem>
-        <ListItem>Комплексная digital-стратегия</ListItem>
+        <ListItem>Продвижение в социальных медия</ListItem>
+        <ListItem>Продвижение сообществ</ListItem>
+        <ListItem>Мониторинг и аналитика</ListItem>
+        <ListItem>Продвижение личного бренда</ListItem>
       </List>
       <List name="production">
         <ListHeader>
           Production
         </ListHeader>
-        <ListItem>Коммуникационная стратегия</ListItem>
-        <ListItem>Медийная стратегия</ListItem>
-        <ListItem>SMM-стратегия</ListItem>
-        <ListItem>Комплексная digital-стратегия</ListItem>
+        <ListItem>Web-разработка</ListItem>
+        <ListItem>Promo - видео</ListItem>
+        <ListItem>Promo - фото</ListItem>
       </List>
       <Button onClick={onCTAClick}>
-        Начать работу
+        {CTAcopy}
       </Button>
       </ServicesStatueContainer>
     </ServicesContent>

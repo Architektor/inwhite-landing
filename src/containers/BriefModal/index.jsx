@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { servicesOptions, briefModalTitle, briefCTACopy } from '../../config/materials';
+
 import {
   BriefModalContainer,
   BriefModalContents,
@@ -21,7 +23,7 @@ const BriefModal = ({ isOpen, onSubmit, onClose }) => isOpen &&
       onClick={(ev) => ev.stopPropagation()}
     >
       <BriefModalTitle>
-        Заполните короткий бриф и мы с вами свяжемся!
+        {briefModalTitle}
       </BriefModalTitle>
       <BriefModalForm onSubmit={onSubmit}>
         <BriefModalFormLeft>
@@ -45,7 +47,7 @@ const BriefModal = ({ isOpen, onSubmit, onClose }) => isOpen &&
           />
           <FormField
             select
-            selectOptions={['Продвижение в социальных медия']}
+            selectOptions={servicesOptions}
             title="Чем мы можем вам помочь?"
             name="needs"
           />
@@ -63,7 +65,7 @@ const BriefModal = ({ isOpen, onSubmit, onClose }) => isOpen &&
             placeholder="(по желанию)"
             rows={23}
           />
-          <SubmitButton>Отправить бриф</SubmitButton>
+          <SubmitButton>{briefCTACopy}</SubmitButton>
         </BriefModalFormRight>
       </BriefModalForm>
     </BriefModalContents>

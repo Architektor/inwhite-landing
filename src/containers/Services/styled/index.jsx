@@ -72,25 +72,25 @@ function placeList(props) {
       return {
         top: '280px',
         left: '50%',
-        transform: 'translate(calc(-100% - 145px), 0%)',
+        transform: 'translate(calc(-100% - 150px), 0%)',
       };
     case 'analysys':
       return {
         top: '270px',
         left: '50%',
-        transform: 'translate(calc(-100% + 390px), 0%)',
+        transform: 'translate(calc(-100% + 430px), 0%)',
       }
     case 'smm':
       return {
         top: '430px',
         left: '50%',
-        transform: 'translate(calc(-100% - 210px), 0%)',
+        transform: 'translate(calc(-100% - 180px), 0%)',
       }
     case 'production':
       return {
         top: '445px',
         left: '50%',
-        transform: 'translate(calc(-100% + 465px), 0%)',
+        transform: 'translate(calc(-100% + 390px), 0%)',
       }
     default:
       return {

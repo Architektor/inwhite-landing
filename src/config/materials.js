@@ -1,6 +1,9 @@
 /* Слоган под лого на главной */
 export const slogan = 'Никакой воды. Чисто цифры.';
 
+/* Надпись на единственной CTA кнопке */
+export const CTAcopy = 'Начать работу';
+
 /* Название секции с работами */
 export const portfolioSectionName = 'Наши работы';
 
@@ -28,3 +31,16 @@ export const socialLinks = {
   instagramLink: 'http://instagram.com/durov',
   facebookLink: 'http://facebook.com/durov',
 };
+
+/* Варианты "чем мы можем помочь" в модалке с брифом */
+export const servicesOptions = [
+  'Продвижение в социальных медиа',
+  'Чем-то еще',
+  'И еще',
+];
+
+/* Заголовок модалки с брифом */
+export const briefModalTitle = 'Заполните короткий бриф и мы с вами свяжемся!';
+
+/* Надпись на кнопке модалки с брифом */
+export const briefCTACopy = 'Отправить бриф';
