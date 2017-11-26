@@ -32,6 +32,10 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+      # git config
+      - run: git config --global user.name "Architektor"
+      - run: git config --global user.email "gloosx@gmail.com"
         
       # deploy
       - run: yarn deploy
