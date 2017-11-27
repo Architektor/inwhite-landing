@@ -1,42 +1,43 @@
 /* Слоган под лого на главной */
-export const slogan = 'Никакой воды. Чисто цифры.';
+export const slogan = 'Работаем во всяких там интернетах';
 
 /* Надпись на единственной CTA кнопке */
 export const CTAcopy = 'Начать работу';
 
 /* Название секции с работами */
-export const portfolioSectionName = 'Наши работы';
+export const portfolioSectionName = 'Портфолио';
 
 /* Название секции с услугами */
 export const servicesSectionName = 'Услуги';
 
 /* Телефон */
-export const phoneNumber = '+7 (916) 239 21 11';
+export const phoneNumber = '+7 (917) 512 64 46';
 
 /* Мыло */
-export const emailAddress = 'sales@inwhite.com';
+export const emailAddress = 'hello@inwhite.agency';
 
 /* Адрес */
 export const address = {
   city: 'Москва', // Город
-  street: 'Нижнеюрковская', // Улица
-  metroStation: 'Тараса Шевченко', // Метро
-  houseNumber: '31', // Номер дома
-  additionalString: 'стр 33, подьезд 1', // Дополнительная инфа
+  street: 'Тверская', // Улица
+  metroStation: 'Маяковская', // Метро
+  houseNumber: '7', // Номер дома
+  additionalString: 'подьезд 1', // Дополнительная инфа
 };
 
 /* Ссылки на соцсети (http:// обязательно)*/
 export const socialLinks = {
-  vkLink: 'http://vk.com/durov',
-  instagramLink: 'http://instagram.com/durov',
-  facebookLink: 'http://facebook.com/durov',
+  vkLink: 'https://www.facebook.com/Inwhite.digital/',
+  instagramLink: 'https://www.instagram.com/inwhite.agency/',
+  facebookLink: 'https://www.facebook.com/Inwhite.digital/',
 };
 
 /* Варианты "чем мы можем помочь" в модалке с брифом */
 export const servicesOptions = [
   'Продвижение в социальных медиа',
-  'Чем-то еще',
-  'И еще',
+  'Дизайн',
+  'Search Engine Management',
+  'Production',
 ];
 
 /* Заголовок модалки с брифом */
