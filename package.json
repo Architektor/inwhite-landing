@@ -2,7 +2,7 @@
   "name": "inwhite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://architektor.github.io/inwhite-landing",
+  "homepage": "inwhite.agency",
   "dependencies": {
     "classnames": "^2.2.5",
     "emailjs": "^1.0.12",
