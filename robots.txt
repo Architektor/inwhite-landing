@@ -1,0 +1,3 @@
+User-agent: *
+Host: http://inwhite.agency/
+Sitemap: http://inwhite.agency/sitemap.xml
