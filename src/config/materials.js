@@ -1,5 +1,5 @@
 /* Слоган под лого на главной */
-export const slogan = 'Работаем во всяких там интернетах';
+export const slogan = '';
 
 /* Надпись на единственной CTA кнопке */
 export const CTAcopy = 'Начать работу';
